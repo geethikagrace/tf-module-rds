@@ -32,7 +32,7 @@ resource "aws_db_subnet_group" "main" {
 
 resource "aws_db_parameter_group" "main" {
   name        = "${var.name}-${var.env}-pg"
-  family      = "mysql5.6"
+  family      = "aurora-mysql5.7"
 }
 
 resource "aws_rds_cluster" "main" {
