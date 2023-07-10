@@ -62,3 +62,5 @@ resource "aws_rds_cluster_instance" "cluster_instances" {
   tags                    = merge(var.tags, { Name = "${var.name}-${var.env}-rds-${count.index+1}" })
 
 }
+
+
